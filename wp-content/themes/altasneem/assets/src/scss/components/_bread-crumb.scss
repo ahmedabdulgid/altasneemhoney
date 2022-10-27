@@ -1,0 +1,18 @@
+.breadcrumb {
+  margin-bottom: 15px; 
+  font-size: 1rem;
+  .app-container {
+    border-bottom: 1px solid var(--grey);
+    padding-top: 15px;
+    padding-bottom: 15px; 
+    > i {
+        color: var(--secondary-2);
+      margin-right: 10px;
+    }
+  }
+  a {
+    color: var(--secondary);
+    font-weight: 600;
+    margin-right: 10px; 
+  }
+}

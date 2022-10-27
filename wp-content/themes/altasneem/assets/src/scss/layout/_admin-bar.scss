@@ -1,0 +1,13 @@
+.admin-bar {
+  .header,
+  .menu-mobile {
+    top: 32px !important;
+    &-relative {
+      top: 0 !important;
+    }
+    @include media-tablet {
+      top: 0 !important;
+    }
+  }
+ 
+}

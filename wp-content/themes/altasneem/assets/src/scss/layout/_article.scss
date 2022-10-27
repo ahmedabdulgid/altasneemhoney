@@ -1,0 +1,63 @@
+.post {
+  margin-bottom: 35px;
+  @include media-sm{
+    margin-bottom: 20px;
+    }
+  &-container {
+    background-color: var(--light);
+    border-radius: 15px;
+    padding: 20px;
+    @include media-sm{padding:10px;}
+
+  }
+  .featured-media {
+    margin-bottom: 15px;
+    overflow: hidden;
+    max-height: 190px;
+    border-radius: 15px;
+    &:hover {
+      img {
+        transform: scale(1.15);
+      }
+    }
+    img {
+      object-fit: contain;
+      height: 100% !important;
+      width: 100% !important;
+      margin-bottom: 0 !important;
+      transition: all 0.4s ease;
+    }
+  }
+  .post-body {
+    @include media-sm {
+      text-align: center;
+    }
+  }
+  .post-date {
+    font-size: 0.875rem;
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 5px;
+    color: var(--dark);
+    svg {
+      width: 14px;
+      max-height: 14px;
+      margin-right: 5px;
+      fill: var(--primary);
+    }
+  }
+  .post-title{
+    @include media-sm{
+      margin-bottom: 0;
+    }
+  }
+  .post-content,
+  .post-more {
+    @include media-sm {
+      display: none;
+    }
+  }
+  .post-more {
+    margin-top: 20px;
+  }
+}

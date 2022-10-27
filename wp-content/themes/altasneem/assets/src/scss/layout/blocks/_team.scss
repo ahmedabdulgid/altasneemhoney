@@ -1,0 +1,51 @@
+.team {
+  padding: 100px 0 0;
+  .block-head {
+    text-align: center;
+    margin-bottom: 55px;
+    .title {
+      color: var(--primary);
+    }
+  }
+  .member {
+    text-align: center;
+    margin-bottom: 50px;
+    .member-avatar {
+      position: relative;
+      background-color: #000;
+      max-width: 250px;
+      margin: 0 auto 25px;
+      cursor: pointer;
+      overflow: hidden;
+      &:hover {
+        img {
+          opacity: 0.8;
+          transform: scale(1.1);
+        }
+      }
+      img {
+        position: relative;
+        z-index: 1;
+        transition: all 0.3s ease-in-out;
+      }
+      &::before {
+        content: "";
+        @include overlay;
+        background-image: url("../images/vectors/avatar_cover.png");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        z-index: 5;
+      }
+    }
+    .name {
+      margin-bottom: 2px;
+    }
+    .position {
+      color: var(--dark);
+      font-weight: 500;
+      opacity: 0.5;
+    }
+  }
+}

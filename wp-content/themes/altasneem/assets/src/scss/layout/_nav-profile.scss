@@ -1,0 +1,45 @@
+.profile-navigation {
+  .user-box { 
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    .avatar {
+      margin-right: 10px;
+    }
+    h6 {
+      margin-bottom: 2px;
+    }
+    a {
+      opacity: 0.8;
+    }
+  }
+  ul { 
+    li {
+      font-size: 1rem;
+      font-weight: 600;
+      transition: all 0.4s ease;
+      &:hover,
+      &.is-active {
+        a {
+          color: var(--primary);
+        }
+      }
+      svg {
+        width: 18px;
+        height: 18px;
+        margin-right: 10px;
+      }
+      a {
+        position: relative;
+    padding: 12px 0;
+        display: flex;
+        align-items: center;
+      }
+    }
+    .woocommerce-MyAccount-navigation-link--customer-logout {
+      border-top: 1px solid var(--grey);
+      padding: 18px 0;
+      margin-top: 34px;
+    }
+  }
+}

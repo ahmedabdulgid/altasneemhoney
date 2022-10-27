@@ -1,0 +1,132 @@
+.product-box {
+  list-style: none !important;
+  width: auto !important;
+  margin: 0 !important;
+  float: none !important;
+  &_wrap {
+    background-color: var(--light);
+    border-radius: 15px;
+    padding: 20px;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    position: relative;
+    box-shadow: 0 1px 2px 1px #0000000d;
+    &:hover {
+      box-shadow: 0 1px 3px 0 #0000001a, 0 1px 2px 0 #0000000f;
+    }
+    @include media-md {
+      padding: 12px;
+    }
+    @include media-sm {
+      padding: 8px;
+    }
+  }
+  &_actions {
+    position: absolute;
+    right: 25px;
+    top: 28px;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    @include media-sm {
+      right: 10px;
+      top: 13px;
+    }
+    button {
+      border: 0;
+      padding: 0;
+      background-color: transparent;
+      transition: all 0.4s ease;
+      font-size: 1.25rem;
+      @include media-sm {
+        font-size: 1rem;
+      }
+    }
+    .yith-wcwl-add-button a {
+      width: 30px;
+      height: 18px;
+      overflow: hidden;
+    }
+  }
+  &_image {
+    overflow: hidden;
+    border-radius: 15px;
+    &:hover {
+      img {
+        transform: scale(1.15);
+      }
+    }
+    img {
+      object-fit: contain;
+      height: 100% !important;
+      width: 100% !important;
+      margin-bottom: 0 !important;
+      transition: all 0.4s ease;
+    }
+  }
+  &_inner {
+    padding: 20px 0 0;
+    text-align: center;
+    @include media-md {
+      padding: 10px 0 0;
+    }
+  }
+  &_title {
+    margin-bottom: 5px;
+    @include media-sm {
+      font-size: 1.0625rem;
+    }
+  }
+  .price {
+    color: var(--black) !important;
+    font-weight: 600 !important;
+    font-size: 1.0625rem !important;
+    margin-bottom: 0 !important;
+    display: inline-flex !important;
+    flex-direction: row-reverse;
+    align-items: center;
+    @include media-sm {
+      font-size: 0.9rem !important;
+    }
+    del {
+      font-size: 14px;
+      margin-left: 0.5rem;
+      color: #9ca3af;
+      .woocommerce-Price-amount {
+        font-weight: 400;
+      }
+    }
+    ins {
+      text-decoration: none;
+    }
+  }
+
+  .star-rating {
+    margin: 12px auto 10px !important;
+  }
+  &_button {
+    .button {
+      padding: 0 12px !important;
+      width: 100% !important;
+      height: 44px !important;
+      line-height: 38px !important;
+      @include media-sm {
+        margin-top: 5px !important;
+      }
+      .text {
+        color: #fff;
+        font-size: 0.875rem;
+        @include media-sm {
+          font-size: 0.75rem;
+        }
+      }
+      &::after {
+        top: 2px !important;
+      }
+    }
+  }
+  a.added_to_cart {
+    display: none !important;
+  }
+}

@@ -1,0 +1,15 @@
+.featured-products {
+  padding: 80px 0;
+  @include media-md {
+    padding: 50px 0;
+  }
+  .block-wapper {
+  }
+  .block-head {
+    text-align: center;
+    margin-bottom: 35px;
+    .title {
+      color: var(--primary);
+    }
+  }
+}

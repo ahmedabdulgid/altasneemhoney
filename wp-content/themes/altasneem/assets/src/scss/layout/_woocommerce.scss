@@ -1,0 +1,28 @@
+.woocommerce {
+  .star-rating {
+    font-size: 0.6875rem!important;
+    letter-spacing: 2px;
+    color: #ffad67;
+    width: 6.2em!important;
+  }
+  .onsale {
+    position: absolute;
+    top: 28px !important;
+    left: 28px !important;
+    right: auto !important;
+    margin: 0 !important;
+    min-height: auto !important;
+    font-size: 0.75rem !important;
+    line-height: 1.5rem !important;
+    font-weight: 600 !important;
+    background-color: var(--primary) !important;
+    color: #fff;
+    border-radius: 5px !important;
+    padding: 0 0.625rem !important;
+    @include media-sm {
+      top: 13px !important;
+      left: 13px !important;
+      font-size: 0.65rem !important;
+    }
+  }
+}

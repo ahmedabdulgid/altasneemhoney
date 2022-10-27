@@ -1,0 +1,78 @@
+button {
+  cursor: pointer;
+}
+.btn {
+  display: inline-block;
+  outline: none;
+  font-weight: 600;
+  appearance: initial;
+  border: 1px solid var(--primary);
+  border-radius: 50px;
+  font-size: 1.125rem;
+  padding: 0 38px;
+  height: 58px;
+  line-height: 53px;
+  min-width: 95px;
+  border: none;
+  width: auto;
+  text-align: center;
+  @extend %tran-main;
+  cursor: pointer;
+  @include media-md {
+    padding: 0 24px;
+    height: 50px;
+    line-height: 48px;
+    font-size: 16px;
+  }
+  i {
+    margin-right: 10px;
+  }
+}
+
+.btn-primary {
+  color: var(--black);
+  background-color: var(--primary);
+  &:hover {
+    color: var(--primary);
+    background-color: var(--black);
+  }
+  &:focus {
+    color: var(--primary);
+    background-color: var(--black);
+  }
+}
+.btn-white {
+  color: #fff;
+  border: 2px solid #fff;
+  &:hover {
+    border-color: var(--primary);
+    background-color: var(--primary);
+    color: #fff;
+  }
+  &:focus {
+    border-color: var(--primary);
+    background-color: var(--primary);
+    color: #fff;
+  }
+}
+.btn-secondary {
+  color: var(--primary);
+  background-color: var(--black);
+  &:hover {
+    color: var(--black);
+    background-color: var(--primary);
+  }
+  &:focus {
+    color: var(--black);
+    background-color: var(--primary);
+  }
+}
+
+.btn-sm {
+  height: 2.5rem;
+  line-height: 2.5rem;
+  padding: 0 1rem;
+  @include media-md{
+    font-size: 1rem;
+  }
+}

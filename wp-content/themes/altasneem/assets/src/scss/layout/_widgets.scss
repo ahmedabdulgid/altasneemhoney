@@ -1,0 +1,74 @@
+.sidebar-main{
+  .widget {
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid var(--grey);
+    .title,
+    .widget-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      line-height: 1.2;
+      margin: 0 0 25px;
+      padding: 6px 0 8px 15px;
+      border-left: 10px solid var(--secondary);
+    }
+  }
+  .searchform {
+    &-container {
+      display: flex;
+      align-items: center;
+    }
+    input {
+      border: 1px solid var(--grey);
+      border-right: none;
+      border-radius: 5px 0 0 5px;
+      transition: all 0.3s ease;
+      &:focus {
+        border-color: var(--secondary);
+        & ~ button {
+          border-color: var(--secondary);
+        }
+      }
+    }
+    button {
+      transition: all 0.3s ease;
+      border: 1px solid var(--grey);
+      border-left: none;
+      border-radius: 0 5px 5px 0;
+      height: 48px;
+      line-height: 48px;
+      background-color: transparent;
+      padding: 0 15px;
+      &:hover {
+        color: var(--secondary);
+      }
+    }
+  }
+  
+  .recent-posts-widget-with-thumbnails {
+    .rpwwt-post-title {
+      font-weight: 600;
+    }
+    .rpwwt-post-date {
+      color: var(--grey-2);
+    }
+    .rpwwt-widget ul li {
+      overflow: hidden;
+      margin: 0 0 5px;
+  }
+  }
+  .widget_wpcategorieswidget {
+    .categories ul {
+      li {
+        border: none;
+        a {
+          color: var(--dark);
+          font-weight: 600;
+          &:hover {
+            color: var(--secondary);
+          }
+        }
+      }
+    }
+  }
+}

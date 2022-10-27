@@ -1,0 +1,69 @@
+.about-us {
+  background-image: url(../images/bg/about-bg.png);
+  padding: 130px 0;
+  position: relative;
+  z-index: 1;
+  @include media-md {
+    padding: 80px 0;
+  }
+  &::before {
+    content: "";
+    @include overlay;
+     background-color: var(--dark);
+    opacity: 0.84;
+    z-index: 2;
+  }
+  .block-wapper {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 -20px;
+    @include media-sm {
+      flex-direction: column;
+    }
+    > div {
+      padding: 0 20px;
+      @include media-sm {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+        width: 100%;
+      }
+    }
+    .block-image {
+      flex: 0 0 42%;
+      max-width: 42%;
+    }
+    .block-inner {
+      position: relative;
+      .block-style {
+        position: absolute;
+        top: -20%;
+        right: 20%;
+        width: 30%;
+        @include media-sm {
+          top: 0;
+          right: 20px;
+        }
+      }
+      flex: 0 0 85%;
+      max-width: 85%;
+      @include media-md {
+        margin-top: 40px;
+      }
+      span {
+        color: var(--primary);
+      }
+      .subtitle {
+        display: block;
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
+      .title,
+      .description {
+        color: var(--white);
+      }
+    }
+  }
+}

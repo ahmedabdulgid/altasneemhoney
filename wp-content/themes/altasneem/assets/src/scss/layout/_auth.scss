@@ -1,0 +1,38 @@
+.tml{
+  .tml-indicator_hint-wrap{
+
+  }
+   .tml-button { 
+      width: 100% !important;
+      display: block;
+      outline: none;
+      border-radius: 5px;
+      padding: 0 1.25rem;
+      font-weight: 600;
+      font-size: 1rem;
+      height: 3rem;
+      line-height: 3rem;
+      border: none;
+      width: auto; 
+      cursor: pointer;
+      color: #fff;
+      background-color: var(--primary); 
+    }
+    .tml-links {
+      display: none;
+    }
+    .tml-lostpassword {
+      .tml-button {
+        margin-top: 0;
+      }
+    }
+    .tml-pwd-wrap label {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      a {
+        font-weight: 400;
+        color: var(--primary);
+      }
+    }
+}

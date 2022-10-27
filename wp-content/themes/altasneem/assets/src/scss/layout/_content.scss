@@ -1,0 +1,16 @@
+.content-page {
+  min-height: 40vh;
+  padding-bottom: 60px;
+  @include media-md {
+    padding-bottom: 40px;
+  }
+  @include media-sm {
+    padding-bottom: 20px;
+  }
+}
+
+#main {
+  @include media-md {
+    margin: 71px 0 20px;
+  }
+}

@@ -1,0 +1,51 @@
+ul.products {
+  display: grid;
+  gap: 30px;
+  &.columns-6 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    @media (min-width: 1536px) {
+      grid-template-columns: repeat(6, minmax(0, 1fr));
+    }
+    @include media-xl {
+      grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    }
+    @include media-tablet {
+      grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    }
+    @include media-md {
+      grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+      gap: 10px;
+    } 
+  }
+  &.columns-5 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    @media (min-width: 1536px) {
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+    }
+    @include media-tablet {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    @include media-md {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+    } 
+  }
+  &.columns-4 {
+    grid-template-columns: repeat(4, 1fr);
+    @include media-tablet {
+      grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    }
+    @include media-md {
+      grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+      gap: 10px;
+    }
+   
+  }
+
+  &:before {
+    content: none !important;
+  }
+  &::after {
+    content: none !important;
+  }
+}

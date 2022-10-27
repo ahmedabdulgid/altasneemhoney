@@ -1,0 +1,56 @@
+.quantiy-form {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--grey);
+  border-radius: 25px;
+  overflow: hidden;
+  button {
+    font-size: 22px;
+    font-weight: 500;
+    height: 48px;
+    width: 48px;
+    @include media-md {
+      width: 40px;
+      height: 40px !important;
+    }
+    padding: 0 10px;
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      color: #fff;
+      background-color: var(--primary);
+    }
+    &.add {
+      border-right: 1px solid var(--grey);
+    }
+
+    &.sub {
+      border-left: 1px solid var(--grey);
+    }
+  }
+  .quantity {
+    float: none !important;
+    margin: 0 !important;
+    input {
+      border: none !important;
+      height: 48px !important;
+
+      @include media-md {
+        width: 40px;
+        height: 40px !important;
+      }
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        /* display: none; <- Crashes Chrome on hover */
+        -webkit-appearance: none;
+        margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+      }
+
+      &[type="number"] {
+        -moz-appearance: textfield; /* Firefox */
+      }
+    }
+  }
+}

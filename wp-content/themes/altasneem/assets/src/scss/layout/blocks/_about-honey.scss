@@ -1,0 +1,71 @@
+.about-honey {
+  padding: 130px 0;
+  @include media-md {
+    padding: 80px 0;
+  }
+  @include media-sm {
+    padding: 50px 0;
+    text-align: center;
+  }
+  .block-image {
+    max-width: 350px;
+    text-align: center;
+    margin: 0 auto;
+    @include media-sm {
+      margin: 35px auto;
+    }
+  }
+  .block-inner {
+    
+    .subtitle {
+      display: block;
+      font-weight: 600;
+      color: var(--primary); 
+    }
+    .btn {
+      margin-top: 20px;
+      @include media-sm {
+        margin-top: 10px;
+      }
+    }
+  }
+  .block-properties {
+    .title {
+      margin-bottom: 40px;
+      font-weight: 700;
+      span {
+        color: var(--primary);
+      }
+    }
+    .properties {
+      ul {
+        padding-left: 40px;
+        li {
+          position: relative;
+           text-align: left;
+          &:not(:last-child) {
+            margin-bottom: 22px;
+            @include media-sm{
+                  margin-bottom: 15px;
+            }
+          }
+          &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -40px;
+            background-image: url(../images/icons/check.svg);
+            display: inline-block;
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            background-color: #ffd832;
+            background-size: 16px;
+            background-position: center;
+            background-repeat: no-repeat;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,94 @@
+.how-work {
+  padding: 130px 0;
+  position: relative;
+  z-index: 1;
+  @include media-lg {
+    padding: 80px 0;
+  }
+  @include media-md {
+    padding: 50px 0 80px;
+  }
+  @include media-sm { 
+    text-align: center;
+  }
+  .block-inner {
+    padding: 50px;
+    background-color: var(--black);
+    background-image: url(../images/vectors/bee_style_2.png);
+    border-radius: 10px;
+    @include media-md {
+      padding: 30px 20px;
+    }
+    .subtitle {
+      display: block;
+      font-size: 1.375rem;
+      font-weight: 600;
+      color: var(--primary);
+      margin-bottom: 10px;
+    }
+    .title {
+      color: #fff;
+      span {
+        color: var(--primary);
+      }
+    }
+    .btn {
+      margin-top: 20px;
+    }
+  }
+  .block-video {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include media-md {
+      padding: 110px 0 20px;
+    }
+    .video-open {
+      width: 100px;
+      height: 100px;
+      background-color: #fbc41f;
+      box-shadow: 0 0 0 15px #fbc41fb3 inset, 0 0 0 20px #fbc41f4d, 0 0 0 35px #fbc41f33;
+      position: relative;
+      border-radius: 50%;
+      border: none;
+      &:after {
+        content: "";
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100px;
+        height: 100px;
+        z-index: -1;
+        opacity: 1;
+        margin: auto;
+        position: absolute;
+        border: 50px solid #fbc41f;
+        border-radius: 50%;
+        animation: pulsate 2s;
+        animation-delay: 0s;
+        animation-direction: forwards;
+        animation-iteration-count: infinite;
+        animation-timing-function: steps;
+        @keyframes pulsate {
+          0% {
+            opacity: 1;
+            box-shadow: inset 0 0 50px 3px rgba(251, 196, 31, 0.692), 0 0 50px 10px rgba(251, 196, 31, 0.75);
+          }
+          100% {
+            opacity: 0;
+            height: 250px;
+            width: 250px;
+            box-shadow: none;
+          }
+        }
+      }
+      svg {
+        width: 25px;
+        max-height: 25px;
+        fill: #fff;
+      }
+    }
+  }
+}

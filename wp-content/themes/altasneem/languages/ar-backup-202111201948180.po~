@@ -1,0 +1,145 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Al Tasneem Honey\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-11-05 20:02+0000\n"
+"PO-Revision-Date: 2021-11-19 19:19+0000\n"
+"Last-Translator: \n"
+"Language-Team: Arabic\n"
+"Language: ar\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100 >= 3 "
+"&& n%100<=10 ? 3 : n%100 >= 11 && n%100<=99 ? 4 : 5;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.5.5; wp-5.8.2\n"
+"X-Domain: altasneem"
+
+#: footer.php:48 includes/block/contact-us.php:45
+msgid "Address"
+msgstr "العنوان"
+
+#. Name of the theme
+msgid "Al Tasneem Honey"
+msgstr "عسل التسنيم"
+
+#: footer.php:117
+msgid "All Rights Reserved."
+msgstr "جميع الحقوق محفوظة."
+
+#: includes/modal/auth.php:39
+msgid "Already have an account?"
+msgstr "لديك حساب بالفعل؟"
+
+#: core/blocks.php:15
+msgid "Altasneem"
+msgstr ""
+
+#: includes/modal/auth.php:50
+msgid "Back to"
+msgstr "العودة الى"
+
+#: footer.php:54 includes/block/contact-us.php:51
+msgid "Call US"
+msgstr "اتصل بنا"
+
+#. 1: Number of comments, 2: Post title.
+#: comments.php:32
+#, php-format
+msgctxt "comments title"
+msgid "%1$s reply"
+msgid_plural "%1$s replies"
+msgstr[0] "%1$s تعليق"
+msgstr[1] "%1$s تعليق"
+msgstr[2] "تعليقان"
+msgstr[3] "%1$s تعليقات"
+msgstr[4] "%1$s تعليقات"
+msgstr[5] "%1$s تعليقات"
+
+#: includes/modal/auth.php:28
+msgid "Don 't have any account?"
+msgstr "ليس لديك حساب؟"
+
+#: core/ecommerce.php:11
+msgid "EGP"
+msgstr "جنية"
+
+#: footer.php:68 includes/block/contact-us.php:65
+msgid "Follow us"
+msgstr "تابعنا"
+
+#. URI of the theme
+#. Author URI of the theme
+msgid "https://altasneemhoney.com/"
+msgstr ""
+
+#: header.php:80 includes/menu/profile.php:43 includes/modal/auth.php:39
+#: includes/modal/auth.php:50
+msgid "Login"
+msgstr "الدخول"
+
+#: includes/modal/auth.php:16
+msgid "Login / Register"
+msgstr "دخول / تسجيل"
+
+#: includes/menu/mobile.php:7
+msgid "Menu"
+msgstr "القائمة"
+
+#: search.php:31
+msgid "not found results for"
+msgstr "لا توجد نتائج ل"
+
+#: includes/modal/auth.php:26 includes/modal/auth.php:37
+#: includes/modal/auth.php:48
+msgid "Or"
+msgstr "او"
+
+#. Description of the theme
+msgid "Our theme is Custome Theme For Our Company"
+msgstr ""
+
+#: includes/menu/profile.php:7
+msgid "Profile"
+msgstr "الملف الشخصى"
+
+#: includes/content.php:28
+msgid "Read More"
+msgstr "إقراء المزيد"
+
+#: includes/modal/auth.php:28
+msgid "Register"
+msgstr "تسجيل"
+
+#: includes/content-hero.php:19
+msgid "Results for"
+msgstr "نتائج ل "
+
+#: searchform.php:3
+msgid "Search here..."
+msgstr "ابحث هنا..."
+
+#: core/ecommerce.php:158 includes/content.php:40
+msgid "Share"
+msgstr "مشاركة "
+
+#: includes/block/home-slider.php:62
+msgid "Shop Now"
+msgstr "اشترى الآن"
+
+#: includes/content.php:35
+msgid "Tags"
+msgstr "وسوم"
+
+#. Author of the theme
+msgid "the Al Tasneem Honey team"
+msgstr ""
+
+#: header.php:80
+msgid "Welcome"
+msgstr "مرحباََ"
+
+#: includes/menu/wishlist.php:7
+msgid "Wishlist"
+msgstr "المفضلة"

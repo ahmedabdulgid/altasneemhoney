@@ -1,0 +1,6 @@
+.woocommerce-info {
+  border-color: var(--primary);
+  &::before {
+    color: var(--primary);
+  }
+}

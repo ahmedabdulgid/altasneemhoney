@@ -1,0 +1,46 @@
+.home-slider {
+  .swiper-slide {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    @include media-md{
+   min-height: 70vh;
+    }
+    .slide-wrap {
+      max-width: 500px;
+    }
+    .subtitle {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    span {
+      color: var(--primary);
+    }
+    .title,
+    .description {
+      color: var(--white);
+    }
+    .description {
+      font-size: 1.125rem;
+    }
+    .links {
+      margin-top: 42px;
+      .btn {
+        &:not(:last-child) {
+          margin-right: 15px;
+        }
+      }
+    }
+  }
+  .swiper-pagination {
+    &-bullet {
+      width: 14px;
+      height: 14px;
+      --swiper-theme-color: var(--primary);
+    }
+  }
+}
